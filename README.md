@@ -43,5 +43,5 @@ I also learned that the CSS class names in the React components must match the s
 
 [Full Stack at Brown project requirements] (https://docs.google.com/document/d/1UArkn9fSR-fAt9hPDkvvVxuwChWwjc3kFkLJs-Hhvyg/edit?tab=t.0)
 
-[React Tutorial] (https://www.youtube.com/watch?v=SqcY0GlETPk)
+[React tutorial] (https://www.youtube.com/watch?v=SqcY0GlETPk)
 
