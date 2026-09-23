@@ -1,16 +1,45 @@
-# React + Vite
+**Overview**
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This project is a simple to-do list built with React, JavaScript, CSS, and Vite. Users can type a task, add it to the list, and remove it when they are finished.
 
-Currently, two official plugins are available:
+The purpose of this project was to practice beginner React concepts, including components, props, state, event handling, and displaying lists.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**How to Run the Project**
 
-## React Compiler
+You need Node.js installed on your computer.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Download or clone this repository.
+2. Open the project folder in a terminal.
+3. Install the project dependencies:
+    npm install
 
-## Expanding the Oxlint configuration
+4. Start the development server:
+    npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+5. Open the local address displayed in the terminal. It will usually look like:
+    http://localhost:5173
+
+**My Contribution**
+
+I designed the to-do list interface and built its functionality.
+
+I used React state to store the text entered by the user and the list of tasks. I created a separate Task component and passed the task name and remove function to it through props.
+
+I also added the ability to create tasks, display them on the page, and remove individual tasks.
+
+**What I Learned**
+
+I learned how React components can divide an interface into smaller pieces. I also learned how to pass information from one component to another using props.
+
+One challenge was understanding how changing state makes React update the page. I approached this by building the application one feature at a time. I first displayed a basic component, then added the input, followed by adding and removing tasks.
+
+I also learned that the CSS class names in the React components must match the selectors in the CSS file for the styles to work.
+
+**References**
+
+[React documentation] (https://react.dev/reference/react)
+
+[Vite documentation] (https://vite.dev/guide/)
+
+[Full Stack at Brown project requirements] (https://docs.google.com/document/d/1UArkn9fSR-fAt9hPDkvvVxuwChWwjc3kFkLJs-Hhvyg/edit?tab=t.0)
+
