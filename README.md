@@ -45,3 +45,4 @@ I also learned that the CSS class names in the React components must match the s
 
 [React tutorial] (https://www.youtube.com/watch?v=SqcY0GlETPk)
 
+[CSS Guide] (https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics)
