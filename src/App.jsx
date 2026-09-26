@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import './App.css';
 
-function Task({ name, onDelete }) {
+function Task({ name, del }) {
   return (
-    <li className="task-item">
+    <li className="task">
       <span>{name}</span>
 
-      <button className="delete-button" onClick={onDelete}>
+      <button className="delete" onClick={del}>
         Remove
       </button>
     </li>
@@ -14,26 +14,26 @@ function Task({ name, onDelete }) {
 }
 
 function App() {
-  const [taskText, setTaskText] = useState('');
+  const [input, setText] = useState('');
   const [tasks, setTasks] = useState([]);
 
-  function addTask(event) {
+  function add(event) {
     event.preventDefault();
 
-    if (taskText.trim() === '') {
+    if (input.trim() === '') {
       return;
     }
 
     const newTask = {
-      id: Date.now(),
-      name: taskText,
+      id: Math.random(),
+      name: input,
     };
 
     setTasks([...tasks, newTask]);
-    setTaskText('');
+    setText('');
   }
 
-  function removeTask(taskId) {
+  function remove(taskId) {
     const updatedTasks = tasks.filter(
       (task) => task.id !== taskId
     );
@@ -46,11 +46,11 @@ function App() {
     <section className="todo-container">
       <h1>My To-Do List</h1>
 
-      <form className="task-form" onSubmit={addTask}>
+      <form className="task-form" onSubmit={add}>
         <input
           type="text"
-          value={taskText}
-          onChange={(event) => setTaskText(event.target.value)}
+          value={input}
+          onChange={(event) => setText(event.target.value)}
           placeholder="Enter a task"
         />
 
@@ -62,7 +62,7 @@ function App() {
           <Task
             key={task.id}
             name={task.name}
-            onDelete={() => removeTask(task.id)}
+            del={() => remove(task.id)}
           />
         ))}
       </ul>

@@ -63,7 +63,7 @@ h1 {
 }
 
 .task-form button,
-.delete-button {
+.delete {
   padding: 12px 16px;
   color: white;
   border: none;
@@ -89,7 +89,7 @@ h1 {
   list-style: none;
 }
 
-.task-item {
+.task {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -101,15 +101,15 @@ h1 {
   border-radius: 8px;
 }
 
-.task-item span {
+.task span {
   overflow-wrap: anywhere;
 }
 
-.delete-button {
+.delete {
   background: #dc2626;
 }
 
-.delete-button:hover {
+.delete:hover {
   background: #b91c1c;
 }
 
