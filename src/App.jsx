@@ -19,9 +19,6 @@ function App() {
   const [tasks, setTasks] = useState([]);
 
   function add(event) {
-    //prevents page from reloading every input
-    event.preventDefault();
-
     if (input.trim() === '') {
       return;
     }
@@ -48,7 +45,7 @@ function App() {
     <section className="todo">
       <h1>My To-Do List</h1>
 
-      <form className="form" onSubmit={add}>
+      <div className="form" onSubmit={add}>
         <input
           type="text"
           value={input}
@@ -56,8 +53,8 @@ function App() {
           placeholder="Enter a task"
         />
 
-        <button type="submit">Add</button>
-      </form>
+        <button type = "button" onClick = {add}>Add</button>
+      </div>
 
       <ul className="task-list">
         {tasks.map((task) => (
