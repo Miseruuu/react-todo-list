@@ -43,10 +43,10 @@ function App() {
 
   return (
   <main className="app">
-    <section className="todo-container">
+    <section className="todo">
       <h1>My To-Do List</h1>
 
-      <form className="task-form" onSubmit={add}>
+      <div className="form" onSubmit={add}>
         <input
           type="text"
           value={input}
@@ -55,7 +55,7 @@ function App() {
         />
 
         <button type="submit">Add</button>
-      </form>
+      </div>
 
       <ul className="task-list">
         {tasks.map((task) => (
