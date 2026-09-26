@@ -31,9 +31,7 @@ I also added the ability to create tasks, display them on the page, and remove i
 
 I learned how React components can divide an interface into smaller pieces. I also learned how to pass information from one component to another using props.
 
-One challenge was understanding React state. I learned that when I update the task array using setTasks, React automatically updates the list shown on the page. I worked through this by building and testing one feature at a time: first displaying the page, then creating the input, then adding tasks, and finally removing tasks.
-
-I also learned that the CSS class names in the React components must match the selectors in the CSS file for the styles to work.
+One challenge was understanding React state. At first, I thought I could store tasks in a regular array and modify it with push(). I learned that React does not automatically update the interface when a regular variable changes. Using useState and setTasks allowed me to save the task list and tell React to render the updated list. I worked through by building and testing one feature at a time: first displaying the page, then creating the input, then adding tasks, and finally removing tasks.
 
 **References**
 
