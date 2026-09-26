@@ -31,7 +31,7 @@ I also added the ability to create tasks, display them on the page, and remove i
 
 I learned how React components can divide an interface into smaller pieces. I also learned how to pass information from one component to another using props.
 
-One challenge was understanding how changing state makes React update the page. I approached this by building the application one feature at a time. I first displayed a basic component, then added the input, followed by adding and removing tasks.
+One challenge was understanding React state. I learned that when I update the task array using setTasks, React automatically updates the list shown on the page. I worked through this by building and testing one feature at a time: first displaying the page, then creating the input, then adding tasks, and finally removing tasks.
 
 I also learned that the CSS class names in the React components must match the selectors in the CSS file for the styles to work.
 
@@ -44,5 +44,7 @@ I also learned that the CSS class names in the React components must match the s
 [Full Stack at Brown project requirements] (https://docs.google.com/document/d/1UArkn9fSR-fAt9hPDkvvVxuwChWwjc3kFkLJs-Hhvyg/edit?tab=t.0)
 
 [React tutorial] (https://www.youtube.com/watch?v=SqcY0GlETPk)
+
+[Javascript tutorial] (https://www.w3schools.com/js/js_objects.asp)
 
 [CSS Guide] (https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics)

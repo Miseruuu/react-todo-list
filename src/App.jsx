@@ -13,11 +13,13 @@ function Task({ name, del }) {
   );
 }
 
+
 function App() {
   const [input, setText] = useState('');
   const [tasks, setTasks] = useState([]);
 
   function add(event) {
+    //prevents page from reloading every input
     event.preventDefault();
 
     if (input.trim() === '') {
